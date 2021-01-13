@@ -1,0 +1,19 @@
+{
+  "name": "just-want-pdf",
+  "version": "1.0.0",
+  "description": "a PDF converter, takes in file(s) and put them into one pdf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HicirTech/JustWantPDF.git"
+  },
+  "author": "HicirTech - Tim Luo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HicirTech/JustWantPDF/issues"
+  },
+  "homepage": "https://github.com/HicirTech/JustWantPDF#readme"
+}
