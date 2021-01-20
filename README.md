@@ -33,6 +33,7 @@ import to your project
 `import converter from "just-want-pdf";`
 
 Convertion
+
 **Assumption**
 
 ```
@@ -47,7 +48,7 @@ to blob
 ` const result = converter.toBlob(fileList)`
 
 to File
-` const result = converter.toByte(fileList)`
+` const result = converter.toFile(fileList)`
 
 for display in iframe
 
@@ -55,7 +56,7 @@ for display in iframe
     .....
 
     var result = convert.toBlob(fileList);
-    const url =URL.createObjectURL(b);
+    const url =URL.createObjectURL(result);
 
     //use iframe to display url
 
