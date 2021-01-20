@@ -7,7 +7,7 @@
     />
 </a>
 
-Just-Give-Me is a package to help you to get PDF in node.js envrionment.  
+Just-Want-PDF is a package to help you to get PDF in node.js envrionment.  
 Takes in many files, marge them, and output a single PDF result
 <hr/>
 
