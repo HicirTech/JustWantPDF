@@ -10,6 +10,7 @@ const toByte = async (files) => {
   for (var i = 0; i != files.length; i++) {
     var buffer = await toBuffer(files[i]);
     var type = files[i].type;
+
     if (type == "application/pdf") {
       const loader = await PDFDocument.load(buffer);
       var j = 0;
@@ -25,7 +26,6 @@ const toByte = async (files) => {
     } else {
       const page = pdfDoc.addPage();
       const { width, height } = page.getSize();
-
       var image;
       if (type == "image/jpeg") {
         image = await pdfDoc.embedJpg(buffer);
@@ -42,15 +42,15 @@ const toByte = async (files) => {
   return pdfBytes;
 };
 
-const toBlob = async (file) => {
-  var b = await toByte(file);
+const toBlob = async (files) => {
+  var b = await toByte(files);
   var blob = new Blob([b], { type: "application/pdf" });
 
   return blob;
 };
 
-const toFile = async (file) => {
-  var blob = toBlob(file);
+const toFile = async (files) => {
+  var blob = toBlob(files);
   var f = new File([blob], "result.pdf");
   return f;
 };
