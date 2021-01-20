@@ -1,6 +1,6 @@
 {
   "name": "just-want-pdf",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "a PDF converter, takes in pdf jpg png file(s) and put them into one pdf",
   "main": "index.js",
   "scripts": {
