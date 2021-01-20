@@ -1,6 +1,6 @@
 {
   "name": "just-want-pdf",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "a PDF converter, takes in pdf jpg png file(s) and put them into one pdf",
   "main": "index.js",
   "scripts": {
@@ -11,14 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/HicirTech/JustWantPDF.git"
   },
-  "author": "hicir-tech",
+  "author": "hicir-tech (Tim)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HicirTech/JustWantPDF/issues"
   },
   "homepage": "https://github.com/HicirTech/JustWantPDF#readme",
   "dependencies": {
-    "node-fetch": "^2.6.1",
     "pdf-lib": "^1.15.0"
   }
 }
